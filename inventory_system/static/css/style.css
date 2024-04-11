@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* NAVBAR */
+/* Default styles for large screens */
+#navbar-max {
+    width: 35vh;
+    height: 100vh;
+    box-shadow: 10px 0px 10px grey;
+    float: left;
+    overflow: auto;
+}
+
+.large-logo {
+    width: 200px;
+    padding: 20px 0px 20px 25px;
+}
+
+.small-logo {
+    display: none; /* Hide small logo by default */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    #navbar-max {
+        width: 20vh; /* Decrease navbar width for small screens */
+    }
+
+    .large-logo {
+        display: none; /* Hide large logo for small screens */
+    }
+
+    .small-logo {
+        display: block; /* Show small logo for small screens */
+        width: 100px; /* Adjust width as needed */
+        padding: 20px 0px 10px 20px; /* Adjust padding as needed */
+    }
+
+    .content ul li.current {
+        display: block; /* Show the current menu item for small screens */
+    }
+    .navbar-description {
+        display: none;
+    }
+    
+    /* Increase the size of the icons */
+    #navbar-max .content .fa {
+        font-size: 30px; /* Adjust the font size as needed */
+        padding-right: 15px; /* Adjust the padding as needed */
+    }
+}
+
+#navbar-max .content {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+#navbar-max .content ul {
+    list-style: none;
+    margin: 0px;
+    padding-inline-start: 0;
+}
+#navbar-max .content ul li{
+    padding: 10px 0px 10px 40px;
+}
+#navbar-max .content .current{
+    background-color: #0A4199;
+    color: white;
+}
+#navbar-max .content ul li:hover {
+    background-color: #0A4199;
+    color: white;
+}
+#navbar-max .content a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+#navbar-max .content a:hover{
+    color: white;
+}
+/* NAVBAR ICONS */
+#navbar-max .content .fa {
+    padding-right: 20px;
+}
+#navbar-max .content .fa-tasks {
+    font-size: 25px;
+}
+#navbar-max .content .fa-book, .fa-sticky-note, .fa-wrench {
+    font-size: 27px;
+}
+#navbar-max .content .fa-wrench,
+.fa-info-circle {
+    font-size: 25px;
+}
+#navbar-max .content .fa-shopping-cart,
+.fa-users {
+    font-size: 20px;
+}
+
+
+#container {
+    background-color: #0A4199;
+    overflow: auto;
+}
+#container h1{
+    padding-left: 30px;
+    color: white;
+}
+#container .content{
+    background-color: white;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+#container .content table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    text-align: center; 
+}
+#container .content td, th{
+    border-top: 1px solid #ECF0F1;
+    padding: 10px 5px 10px 5px;
+}
+#container .content td{
+    border-left: 1px solid #ECF0F1;
+    border-right: 1px solid #ECF0F1;
+}
+#container .content th{
+    background-color: #0A4199;
+    color: #ECF0F1;
+}
+.import {
+    outline: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid #0A4199;
+    color: #0A4199;
+    background-color: white;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+    font-weight: 800;
+    font-size: 16px;
+    height: 42px;
+    float: right;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 2vh; 
+    margin-right: 2vh;
+}
+.import:hover {
+    background-color: #0A4199;
+    color: white;
+    border-color: #0A4199; 
+}
+.add{
+    outline: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid #0A4199;
+    color: #fff;
+    background-color: #0A4199;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+    font-weight: 800;
+    font-size: 16px;
+    height: 42px;
+    float: right;
+    margin-bottom: 2vh; 
+}
+.add:hover{
+    background: 0 0;
+    color: #0A4199;
+}
