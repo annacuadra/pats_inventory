@@ -21,7 +21,7 @@
             <li class="current"><a href="{% url 'inventory' %}"><i class="fa fa-book"></i><span class="navbar-description">Inventory</span></a></li>
             <li><a href="#"><i class="fa fa-sticky-note"></i><span class="navbar-description">Reports</span></a></li>
             <li><a href="#"><i class="fa fa-shopping-cart"></i><span class="navbar-description">Purchase</span></a></li>
-            <li><a href="{% url 'people' %}"><i class="fa fa-users"></i><span class="navbar-description">People</span></a></li>
+            <li><a href="#"><i class="fa fa-users"></i><span class="navbar-description">People</span></a></li>
             <li><a href="#"><i class="fa fa-wrench"></i><span class="navbar-description">Settings</span></a></li>
             <li><a href="#"><i class="fa fa-info-circle"></i><span class="navbar-description">Help</span></a></li>
         </ul>
@@ -38,29 +38,19 @@
                 </button>
             </div>
         </div>
-        <button class="add">Add Item</button>
-        <!-- Hidden file upload input -->
-        <input type="file" id="file-upload" name="file" style="display: none;" onchange="this.form.submit();">
-        <!-- Label for file upload -->
-        <label for="file-upload" class="import">Import Data</label>
+        <button class="add">Add People</button>
         <table>
             <thead>
-            <th>DATE</th>
-            <th>NO.</th>
-            <th>DESCRIPTION</th>
-            <th>LOCATION</th>
-            <th>STATUS</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
             <th>  </th>
             <th>  </th>
             </thead>
             <tbody>
             {% for item in inventory_items %}
                 <tr>
-                    <td>{{ item.date }}</td>
-                    <td>{{ item.number }}</td>
-                    <td>{{ item.description }}</td>
-                    <td>{{ item.location }}</td>
-                    <td>{{ item.status }}</td>
+                    <td></td>
+                    <td></td>
                     <td><u>Edit</u></td>
                     <td><u>Delete</u></td>
                 </tr>

@@ -1,4 +1,4 @@
-{% load static %}
+{% load static%}
 
 <!DOCTYPE html>
 <html>
@@ -12,25 +12,26 @@
     <body>
         <div id="navbar-max">
             <div class="logo">
-                <img src="{% static 'images/logo.png' %}" alt="pats-logo">
+                <img class="large-logo" src="{% static 'images/logo.png' %}" alt="pats-logo">
+                <img class="small-logo" src="{% static 'images/small-logo.png' %}" alt="pats-small-logo">
             </div>
             <div class="content">
                 <ul>
-                    <li class="current"><a href="{% url 'index' %}"><i class="fa fa-tasks"></i>Dashboard</a></li>
-                    <li><a href="{% url 'inventory' %}"><i class="fa fa-book"></i>Inventory</a></li>
-                    <li><i class="fa fa-sticky-note"></i>Reports</li>
-                    <li><i class="fa fa-shopping-cart"></i>Purchase</li>
-                    <li><i class="fa fa-users"></i>People</li>
-                    <li><i class="fa fa-wrench"></i>Settings</li>
-                    <li><i class="fa fa-info-circle"></i>Help</li>
+                    <li class="current"><a href="{% url 'index' %}"><i class="fa fa-tasks"></i><span class="navbar-description">Dashboard</span></a></li>
+                    <li><a href="{% url 'inventory' %}"><i class="fa fa-book"></i><span class="navbar-description">Inventory</span></a></li>
+                    <li><a href="#"><i class="fa fa-sticky-note"></i><span class="navbar-description">Reports</span></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i><span class="navbar-description">Purchase</span></a></li>
+                    <li><a href="#"><i class="fa fa-users"></i><span class="navbar-description">People</span></a></li>
+                    <li><a href="#"><i class="fa fa-wrench"></i><span class="navbar-description">Settings</span></a></li>
+                    <li><a href="#"><i class="fa fa-info-circle"></i><span class="navbar-description">Help</span></a></li>
                 </ul>
-                <div class="minimize">
-                    <i class="fas fa-angle-left"></i>
-                </div>
             </div>
         </div>
         <div id="container">
             <h1>INVENTORY MANAGEMENT SYSTEM</h1>
+            <div class="content">
+                
+            </div>
         </div>
     </body>
 </html>
